@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Faculty Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="newfac.js"></script>
+    </head>
+<body>
+    <h1 align="center"><u>Faculty Registration</u></h1>
+            <form name="Newfaculty" method="post" action="AddFacultyServlet" onsubmit="return newfaculty();">
+            <div align="center">
+              <table border="0">
+                <tr>
+                  <td><h3>Name</h3></td>
+                    <td><h3>
+                      <input required name="name" type="text" maxlength="20" />
+                    </h3></td>
+                      </tr>
+                <tr>
+                  <td><h3>Branch</h3></td>
+                    <td>
+                      <div align="right">
+                        <h3>
+                          <select name="branch" id="branch">
+                            <option>CS</option>
+                            <option>IT</option>
+                            <option>CE</option>
+                            <option>ME</option>
+                            <option>EX</option>
+                            <option>EC</option>
+                            <option>EI</option>
+                            <option>MCA</option>
+                          </select>
+                        </h3>
+                      </div></td></tr>
+                <tr>
+                  <td><h3>Email</h3></td>
+                    <td><h3>
+                      <input name="email" type="email" required maxlength="30" />
+                    </h3></td>
+                      </tr>
+                <tr>
+                  <td><h3>Password</h3></td>
+                    <td><h3>
+                      <input name="pass" type="password" required  maxlength="20" />
+                    </h3></td>
+                      </tr>
+                
+                <tr>
+                  <td><h3>Secret Question</h3></td>
+                    <td><h3>
+                      <input name="sques" type="text" required  maxlength="20" />
+                    </h3></td>
+                      </tr>
+                
+                <tr>
+                  <td><h3>Answer</h3></td>
+                    <td><h3>
+                        <input name="ans" type="text" required  maxlength="20" />
+                    </h3></td>
+                      </tr>
+                </table>
+              
+            </div>
+          <label></label>
+            <div align="center">
+              <h1><input name="submit" type="submit" value="Register" /></h1>
+            </div>
+        </form>
+</body>
+</html>

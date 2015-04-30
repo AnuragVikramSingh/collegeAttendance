@@ -1,0 +1,64 @@
+<html>
+<head>
+
+<title>Student</title>
+<script type="text/javascript" src="enrollvalid.js"></script>
+
+
+</head>
+
+<body> 
+<h1 align="center"><strong><u>Student Attendance</u> </strong></h1>
+<form id="Student" name="Student" method="get" action="StudentServlet" onsubmit="return valid();">
+  <table width="400" border="0" align="center">
+    <tr>
+      <td><h3 align="left">Enrollment No</h3></td>
+      <td><label>
+            
+        <div align="left">
+          <input name="enroll" type="text" id="enroll" required placeholder="" />
+          
+          
+        </div>
+      </label></td>
+    </tr>
+    <tr>
+      <td><h3 align="left">Semester</h3></td>
+      <td><label>
+        
+          <div align="left">
+              <select name="sem" id="sem">
+                <option>1st</option>
+                <option>2nd</option>
+                <option>3rd</option>
+                <option>4th</option>
+                <option>5th</option>
+                <option>6th</option>
+                <option>7th</option>
+                <option>8th</option>
+              </select>
+            </div>
+      </label></td>
+    </tr>
+  </table>
+  <label>
+  <div align="center"><strong><br />
+    </strong>
+      <input type="submit" value="Check" oninput=" valid();" >
+      <strong><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+        </strong></div>
+  </label>
+  <p>
+    <label></label>
+  </p>
+ 
+</form>
+</body>
+</html>
+
